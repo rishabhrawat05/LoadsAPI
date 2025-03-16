@@ -1,4 +1,4 @@
-package com.liveasy.loadsapi.services.models;
+package com.liveasy.loadsapi.models;
 
 import java.util.UUID;
 import jakarta.persistence.Column;

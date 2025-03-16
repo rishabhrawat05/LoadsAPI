@@ -1,6 +1,6 @@
 package com.liveasy.loadsapi.dto;
 
-import com.liveasy.loadsapi.services.models.Facility;
+import com.liveasy.loadsapi.models.Facility;
 
 public class PayloadDto {
 	

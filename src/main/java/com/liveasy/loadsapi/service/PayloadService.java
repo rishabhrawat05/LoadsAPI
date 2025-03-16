@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 
 import com.liveasy.loadsapi.dto.PayloadDto;
 import com.liveasy.loadsapi.exceptions.PayloadNotFoundException;
-import com.liveasy.loadsapi.services.models.Payload;
-import com.liveasy.loadsapi.services.repositories.PayloadRepository;
+import com.liveasy.loadsapi.models.Payload;
+import com.liveasy.loadsapi.repositories.PayloadRepository;
 
 @Service
 public class PayloadService {

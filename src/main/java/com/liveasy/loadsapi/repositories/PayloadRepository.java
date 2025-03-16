@@ -1,4 +1,4 @@
-package com.liveasy.loadsapi.services.repositories;
+package com.liveasy.loadsapi.repositories;
 
 import java.util.List;
 
@@ -6,7 +6,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
-import com.liveasy.loadsapi.services.models.Payload;
+
+import com.liveasy.loadsapi.models.Payload;
 
 @Repository
 public interface PayloadRepository extends JpaRepository<Payload, String> {
