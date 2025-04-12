@@ -14,10 +14,19 @@ public class Load {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "load_type")
     private String loadType;
+
+    @Column(name = "weight")
     private Double weight;
+    
+    @Column(name = "origin")
     private String origin;
+
+    @Column(name = "destination")
     private String destination;
+
+    @Column(name = "status")
     private String status;
 
     public Load() {
