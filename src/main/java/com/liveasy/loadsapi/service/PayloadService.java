@@ -18,6 +18,8 @@ public class PayloadService {
 	public PayloadService(PayloadRepository payloadRepository) {
 		this.payloadRepository = payloadRepository;
 	}
+
+	// It create a new payload
 	
 	public Payload createPayload(PayloadDto payloadDto) {
 		Payload payload = new Payload();
@@ -33,10 +35,14 @@ public class PayloadService {
 		return payload;
 		
 	}
+
+	// Returns a List of Payload
 	
 	public List<Payload> getPayload(String shipperId, String truckType, String productType, String loadingPoint, String unloadingPoint) {
 		return payloadRepository.findAllByParam(shipperId, truckType, productType, loadingPoint, unloadingPoint);
 	}
+
+	// Returns a Payload By Id
 	
 	public Payload getPayloadById(String loadId) {
 		Optional<Payload> payloadOpt = payloadRepository.findById(loadId);
@@ -47,6 +53,8 @@ public class PayloadService {
 		return payload;
 		
 	}
+
+	// Update payload based ont loadId
 	
 	public Payload updatePayload(String loadId, PayloadDto payloadDto) {
 		Optional<Payload> payloadOpt = payloadRepository.findById(loadId);
@@ -82,6 +90,8 @@ public class PayloadService {
 		payloadRepository.save(payload);
 		return payload;
 	}
+
+	// Delete Payload based on loadId
 	
 	public String deletePayloadById(String loadId) {
 		Optional<Payload> payloadOpt = payloadRepository.findById(loadId);
